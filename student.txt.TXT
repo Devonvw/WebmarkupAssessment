@@ -1,0 +1,4 @@
+Student name: Devon van Wichen
+Student number: 650122
+Student class: INF1A
+URL student GitHub repository: 
