@@ -1,0 +1,84 @@
+body {
+  margin: 1em;
+}
+nav {
+  margin: 0px;
+}
+nav ul {
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+}
+nav ul li:not(:first-child) {
+  margin: 0 2em 0 2em;
+}
+nav ul li:first-child {
+  margin: 0 2em 0 0;
+}
+img.logo {
+  width: 160px;
+  height: 80px;
+}
+header h1 {
+  margin: 0.2em 0;
+}
+video {
+  width: 100%;
+}
+h3 {
+  margin-top: 0;
+}
+
+figure.article {
+}
+
+@media only screen and (min-width: 600px) {
+  figure.article {
+    margin: 0 0.2em;
+    max-width: 400px;
+    float: left;
+  }
+}
+@media only screen and (min-width: 768px) {
+  figure.article {
+    max-width: 400px;
+    float: right;
+  }
+}
+section.articlesAside {
+  margin: 1em 0;
+  display: flex;
+  flex-grow: 1;
+}
+section.articles {
+  flex-grow: 1;
+  flex-basis: 75%;
+}
+section.articles article {
+  overflow: hidden;
+  margin: 1em 0;
+}
+
+aside {
+  margin: 0 0 0 1em;
+  padding: 0.5em;
+  flex-basis: 25%;
+  flex-grow: 1;
+  background-color: lightgray;
+}
+
+footer.student {
+  margin: 1em 0;
+}
+
+section.cookie {
+  text-align: center;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  width: 200px;
+  height: 100px;
+  color: #fff;
+  opacity: 0.5;
+  background-color: #fa0;
+}
