@@ -10,8 +10,100 @@
     <meta name="author" content="Devon van Wichen" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Devon</title>
+    <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <p>This is an example of a simple HTML page with one paragraph.</p>
+    <header>
+      <img src="../assets/images/tui.png" alt="Tui logo" class="logo" />
+      <h1>Tui</h1>
+      <h2>Discover your smile</h2>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="bestdestinations.html"> Best Destinations</a></li>
+        <li><a href="tickets.html"> Tickets</a></li>
+        <li><a href="contact.html"> Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="contact">
+      <form>
+        <fieldset>
+          <legend>Contact</legend>
+          <label for="name">Naam</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <label for="message">Bericht</label>
+          <textarea id="message" name="message" rows="4" cols="50">
+Type hier jouw bericht
+          </textarea>
+        </fieldset>
+      </form>
+    </section>
+    <aside class="aside-contact">
+      <figure>
+        <a href="https://www.tui.nl/reizen/vietnam/?clearmodel=1">
+          <img src="../assets/images/ninhBinh.jpg" alt="Ninh Binh" />
+        </a>
+        <figcaption>
+          <small>
+            Photo by
+            <a
+              href="https://unsplash.com/@insolitus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Rowan Heuvel</a
+            >
+            on
+            <a
+              href="https://unsplash.com/s/photos/ninh-binh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </small>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.tui.nl/reizen/thailand/bangkok/?clearmodel=1">
+          <img src="../assets/images/seogwipo.jpg" alt="Seogwipo" />
+        </a>
+        <figcaption>
+          <small>
+            Photo by
+            <a
+              href="https://unsplash.com/@adnan_ami?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Adnan Ami</a
+            >
+            on
+            <a
+              href="https://unsplash.com/s/photos/seogwipo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </small>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.tui.nl/reizen/montenegro/?clearmodel=1">
+          <img src="../assets/images/zabljak.jpg" alt="Žabljak" />
+        </a>
+        <figcaption>
+          <small>
+            Photo by
+            <a
+              href="https://unsplash.com/@mmilos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Miloš Milošević</a
+            >
+            on
+            <a
+              href="https://unsplash.com/s/photos/%C5%BEabljak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </small>
+        </figcaption>
+      </figure>
+    </aside>
+
+    <section class="cookie"><p>Cookie statement</p></section>
+    <footer class="student"><span>&copy; 2021 Devon van Wichen</span></footer>
   </body>
 </html>
