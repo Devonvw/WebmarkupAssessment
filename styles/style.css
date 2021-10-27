@@ -274,6 +274,10 @@ section.grid-container figure {
   width: 100%;
 }
 
+section.contact-info {
+  margin: 1em 0;
+}
+
 section.contact {
   float: left;
   width: 70%;
@@ -293,17 +297,37 @@ section.contact > form fieldset {
   flex-direction: column;
   background-color: white;
 }
-aside.aside-contact {
+aside.aside-products {
   margin: 0;
   float: right;
   width: 30%;
 }
 @media only screen and (max-width: 481px) {
-  aside.aside-contact,
+  aside.aside-products,
   section.contact {
     float: none;
     width: 100%;
   }
+}
+
+article.tickets-article {
+  margin: 1em 0;
+}
+
+section.tickets {
+  float: left;
+  width: 70%;
+}
+
+section.tickets > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+section.tickets > table,
+section.tickets > table td,
+section.tickets > table th {
+  border: 1px solid black;
 }
 
 section. #menuToggle {
