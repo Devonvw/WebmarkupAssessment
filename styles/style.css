@@ -150,6 +150,7 @@ footer.student {
 }
 
 section.cookie {
+  z-index: 9999;
   text-align: center;
   position: fixed;
   bottom: 1em;
@@ -313,6 +314,9 @@ aside.aside-products {
 article.tickets-article {
   margin: 1em 0;
 }
+article.tickets-article + section {
+  background-color: green;
+}
 
 section.tickets {
   float: left;
@@ -328,6 +332,9 @@ section.tickets > table,
 section.tickets > table td,
 section.tickets > table th {
   border: 1px solid black;
+  border-width: 1px;
+  border-color: black;
+  border-style: double;
 }
 
 section. #menuToggle {
