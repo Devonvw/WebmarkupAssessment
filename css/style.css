@@ -1,8 +1,16 @@
 /* This is the css for all pages */
 
+@import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
+
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+@media print {
+  * {
+    color: #ffc72b;
+  }
 }
 
 body {
@@ -10,6 +18,7 @@ body {
   overflow-x: hidden;
   margin: 1em;
   padding-right: 2em;
+  font-family: Arial, Helvetica, sans-serif;
 }
 header {
   display: block;
@@ -20,18 +29,26 @@ header {
     display: block;
   }
 }
-nav {
-  margin: 0px;
+nav.nav {
+  margin: 1em 0px;
+  display: none;
+  font-family: "Notable";
 }
-nav ul {
+
+@media only screen and (min-width: 481px) {
+  nav.nav {
+    display: block;
+  }
+}
+nav.nav ul {
   padding: 0px;
   list-style-type: none;
   display: flex;
 }
-nav ul li:not(:first-child) {
+nav.nav ul li:not(:first-child) {
   margin: 0 2em 0 2em;
 }
-nav ul li:first-child {
+nav.nav ul li:first-child {
   margin: 0 2em 0 0;
 }
 img {
@@ -58,6 +75,7 @@ video {
 }
 h3 {
   margin-top: 0;
+  text-transform: uppercase;
 }
 
 p {
@@ -278,11 +296,15 @@ section.article-grid {
 
 section.article-grid > article,
 section.article-grid > aside {
-  background-color: #88612F
+  background-color: #88612f;
   text-align: center;
   padding: 20px 0;
   margin-left: 0;
   font-size: 1em;
+}
+
+section.article-grid > article p::first-letter {
+  font-size: 1.5em;
 }
 
 section.grid-container figure {
@@ -296,7 +318,7 @@ section.contact-info {
 section.contact {
   float: left;
   width: 70%;
-  background-color: #88DA9F;
+  background-color: #88da9f;
   padding: 1em;
 }
 section.contact > form {
@@ -337,6 +359,13 @@ section.tickets {
   width: 70%;
 }
 
+@media only screen and (max-width: 481px) {
+  section.tickets {
+    float: none;
+    width: 100%;
+  }
+}
+
 section.tickets > table {
   width: 100%;
   border-collapse: collapse;
@@ -350,11 +379,33 @@ section.tickets > table th {
   border-style: double;
 }
 
-section. #menuToggle {
+section.tickets > table td:first-child {
+  background-color: #ff0;
+}
+
+section.tickets > table tr:nth-child(even) {
+  background-color: #cff;
+}
+
+section.tickets > table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.nav-mobile {
+  display: block;
+}
+
+@media only screen and (min-width: 481px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+#toggle-mobile-nav {
   display: block;
   position: absolute;
   top: 50px;
-  right: 0;
+  right: 50px;
 
   z-index: 1;
 
@@ -362,18 +413,18 @@ section. #menuToggle {
   user-select: none;
 }
 
-#menuToggle a {
+#toggle-mobile-nav a {
   text-decoration: none;
   color: #232323;
 
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover {
-  color: tomato;
+#toggle-mobile-nav a:hover {
+  color: blue;
 }
 
-#menuToggle input {
+#toggle-mobile-nav input {
   display: block;
   width: 40px;
   height: 32px;
@@ -392,7 +443,7 @@ section. #menuToggle {
 /*
  * Just a quick hamburger
  */
-#menuToggle span {
+#toggle-mobile-nav span {
   display: block;
   width: 33px;
   height: 4px;
@@ -410,11 +461,11 @@ section. #menuToggle {
     background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
 }
 
-#menuToggle span:first-child {
+#toggle-mobile-nav span:first-child {
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2) {
+#toggle-mobile-nav span:nth-last-child(2) {
   transform-origin: 0% 100%;
 }
 
@@ -422,16 +473,16 @@ section. #menuToggle {
  * Transform all the slices of hamburger
  * into a crossmark.
  */
-#menuToggle input:checked ~ span {
+#toggle-mobile-nav input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: black;
 }
 
 /*
  * But let's hide the middle one.
  */
-#menuToggle input:checked ~ span:nth-last-child(3) {
+#toggle-mobile-nav input:checked ~ span:nth-last-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
@@ -439,7 +490,7 @@ section. #menuToggle {
 /*
  * Ohyeah and the last one should go the other direction
  */
-#menuToggle input:checked ~ span:nth-last-child(2) {
+#toggle-mobile-nav input:checked ~ span:nth-last-child(2) {
   transform: rotate(-45deg) translate(0, -1px);
 }
 
@@ -449,18 +500,18 @@ section. #menuToggle {
  */
 #menu {
   position: absolute;
-  width: auto;
-  margin: -100px 0 0 50px;
+  width: 300px;
+  margin: -100px 0 0 -150px;
   padding: 50px;
   padding-top: 125px;
-
-  background: #ededed;
+  display: block;
+  background: aquamarine;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
-  transform: translate(100%);
+  transform: translate(100%, 0);
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
@@ -473,6 +524,6 @@ section. #menuToggle {
 /*
  * And let's slide it in from the left
  */
-#menuToggle input:checked ~ ul {
-  transform: translate(-100%);
+#toggle-mobile-nav input:checked ~ ul {
+  transform: none;
 }

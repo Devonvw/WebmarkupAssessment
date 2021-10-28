@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="A site about me, Devon. It describes who i am and what i do"
+      content="TUI Group (Touristik Union International) is een multinationale groep die vooral actief is in de toerismesector. De hoofdzetel is gevestigd in Hannover, Nedersaksen, Duitsland.
+
+      De aandelen van de TUI Group staan genoteerd aan de Frankfurter Wertpapierbörse en de London Stock Exchange. Het maakt onderdeel uit van de FTSE 100 aandelenindex. De grootste aandeelhouder is de Rus Aleksej Mordasjov, die middels Unifirm Limited, bijna een kwart van de aandelen in handen heeft.[1] Het bedrijf heeft een gebroken boekjaar dat loopt tot 30 september."
     />
     <meta
       name="keywords"
@@ -13,7 +15,9 @@
     <meta name="author" content="Devon van Wichen" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Devon</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   </head>
   <body>
     <header>
@@ -25,39 +29,199 @@
       />
       <h1>Tui</h1>
       <h2>Discover your smile</h2>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html"> Best Destinations</a></li>
+          <li><a href="bestdestinations.html"> Best Destinations</a></li>
+          <li><a href="tickets.html"> Tickets</a></li>
+          <li><a href="contact.html"> Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-mobile">
+        <section id="toggle-mobile-nav">
+          <input type="checkbox" />
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Best Destinations</li></a>
+            <a href="#"><li>Tickets</li></a>
+            <a href="#"><li>Contact</li></a>
+          </ul>
+        </section>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="bestdestinations.html"> Best Destinations</a></li>
-        <li><a href="tickets.html"> Tickets</a></li>
-        <li><a href="contact.html"> Contact</a></li>
-      </ul>
-    </nav>
+
     <article class="tickets-article">
-      <h2>Contact informatie</h2>
+      <h2><em>Tickets</em></h2>
+      <p>
+        Hier ziet u een tabel met de top 20 vakanties naar het buitenland
+        geregeld door Tui.
+      </p>
     </article>
     <section class="tickets">
       <h1>Prijs tabel</h1>
       <table>
         <thead>
           <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Lastname</th>
+            <th>Land</th>
+            <th>Locatie</th>
+            <th>Datum</th>
+            <th>Aantal dagen</th>
+            <th>Prijs P.P.</th>
           </tr>
         </thead>
         <tr>
-          <td>Peter</td>
-          <td>Griffin</td>
+          <td>Aruba</td>
+          <td>Palm Beach</td>
+          <td>29-11-2021</td>
+          <td>9</td>
+          <td>&euro;1599</td>
         </tr>
         <tr>
-          <td>Lois</td>
-          <td>Griffin</td>
+          <td>Aruba</td>
+          <td>Druif Beach</td>
+          <td>16-12-2021</td>
+          <td>9</td>
+          <td>&euro;1885</td>
+        </tr>
+        <tr>
+          <td>Aruba</td>
+          <td>Palm Beach</td>
+          <td>29-11-2021</td>
+          <td>9</td>
+          <td>&euro;1229</td>
+        </tr>
+        <tr>
+          <td>Aruba</td>
+          <td>Oranjestad</td>
+          <td>20-12-2021</td>
+          <td>9</td>
+          <td>&euro;847</td>
+        </tr>
+        <tr>
+          <td>Aruba</td>
+          <td>Cunucu Abao</td>
+          <td>29-11-2021</td>
+          <td>9</td>
+          <td>&euro;849</td>
+        </tr>
+        <tr>
+          <td>Kaapverdië</td>
+          <td>Santa Maria</td>
+          <td>15-12-2021</td>
+          <td>8</td>
+          <td>&euro;899</td>
+        </tr>
+        <tr>
+          <td>Kaapverdië</td>
+          <td>Praia de Salines</td>
+          <td>17-12-2021</td>
+          <td>8</td>
+          <td>&euro;949</td>
+        </tr>
+        <tr>
+          <td>Kaapverdië</td>
+          <td>Lacacão</td>
+          <td>07-12-2021</td>
+          <td>8</td>
+          <td>&euro;699</td>
+        </tr>
+        <tr>
+          <td>Kaapverdië</td>
+          <td>Santa Maria</td>
+          <td>15-12-2021</td>
+          <td>8</td>
+          <td>&euro;749</td>
+        </tr>
+        <tr>
+          <td>Kaapverdië</td>
+          <td>Praia de Salines</td>
+          <td>17-12-2021</td>
+          <td>8</td>
+          <td>&euro;699</td>
+        </tr>
+
+        <tr>
+          <td>Griekenland</td>
+          <td>Kos-stad/Lambi</td>
+          <td>09-10-2022</td>
+          <td>8</td>
+          <td>&euro;787</td>
+        </tr>
+        <tr>
+          <td>Griekenland</td>
+          <td>Ixia</td>
+          <td>09-05-2022</td>
+          <td>9</td>
+          <td>&euro;792</td>
+        </tr>
+        <tr>
+          <td>Griekenland</td>
+          <td>Ixia</td>
+          <td>09-05-2022</td>
+          <td>9</td>
+          <td>&euro;792</td>
+        </tr>
+        <tr>
+          <td>Griekenland</td>
+          <td>Ixia</td>
+          <td>09-05-2022</td>
+          <td>9</td>
+          <td>&euro;693</td>
+        </tr>
+        <tr>
+          <td>Griekenland</td>
+          <td>Rhodos-stad</td>
+          <td>03-10-2022</td>
+          <td>8</td>
+          <td>&euro;712</td>
+        </tr>
+
+        <tr>
+          <td>Griekenland</td>
+          <td>Trianta</td>
+          <td>03-10-2022</td>
+          <td>8</td>
+          <td>&euro;564</td>
+        </tr>
+        <tr>
+          <td>Griekenland</td>
+          <td>Kalithea</td>
+          <td>09-05-2022</td>
+          <td>8</td>
+          <td>&euro;796</td>
+        </tr>
+        <tr>
+          <td>Griekenland</td>
+          <td>Kos-stad/Psalidi</td>
+          <td>04-10-2022</td>
+          <td>8</td>
+          <td>&euro;669</td>
+        </tr>
+        <tr>
+          <td>Griekenland</td>
+          <td>Chersonissos</td>
+          <td>12-10-2022</td>
+          <td>8</td>
+          <td>&euro;502</td>
+        </tr>
+        <tr>
+          <td>Griekenland</td>
+          <td>Koutouloufari</td>
+          <td>08-06-2022</td>
+          <td>8</td>
+          <td>&euro;605</td>
         </tr>
       </table>
-      <footer></footer>
+      <footer><small>Source of data &copy; 2021 TUI.nl</small></footer>
     </section>
     <aside class="aside-products">
       <figure>
