@@ -1,3 +1,5 @@
+/* This is the css for all pages */
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -56,6 +58,18 @@ video {
 }
 h3 {
   margin-top: 0;
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-indent: 0;
+  word-spacing: normal;
+  color: #ff0000;
+}
+
+a {
+  color: #0000ff;
 }
 
 section.articlesAside {
@@ -264,7 +278,7 @@ section.article-grid {
 
 section.article-grid > article,
 section.article-grid > aside {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #88612F
   text-align: center;
   padding: 20px 0;
   margin-left: 0;
@@ -282,13 +296,13 @@ section.contact-info {
 section.contact {
   float: left;
   width: 70%;
-  background-color: aqua;
+  background-color: #88DA9F;
   padding: 1em;
 }
 section.contact > form {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #ff00ff;
 }
 section.contact > form fieldset {
   min-width: 12em;
@@ -315,7 +329,7 @@ article.tickets-article {
   margin: 1em 0;
 }
 article.tickets-article + section {
-  background-color: green;
+  background-color: #ffff00;
 }
 
 section.tickets {
@@ -331,9 +345,8 @@ section.tickets > table {
 section.tickets > table,
 section.tickets > table td,
 section.tickets > table th {
-  border: 1px solid black;
   border-width: 1px;
-  border-color: black;
+  border-color: #00ff00;
   border-style: double;
 }
 
