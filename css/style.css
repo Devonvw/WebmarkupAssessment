@@ -90,6 +90,14 @@ a {
   color: #0000ff;
 }
 
+a:active {
+  color: #00ff00;
+}
+
+a:hover {
+  color: #ff0000;
+}
+
 section.articlesAside {
   margin: 1em 0;
   display: flex;
@@ -349,7 +357,15 @@ aside.aside-products {
 
 article.tickets-article {
   margin: 1em 0;
+  display: hidden;
 }
+
+@media screen and (min-width: 481px) {
+  article.tickets-article {
+    display: block;
+  }
+}
+
 article.tickets-article + section {
   background-color: #ffff00;
 }
