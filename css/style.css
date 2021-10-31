@@ -70,8 +70,13 @@ header h1 {
   margin: 0.2em 0;
 }
 video {
+  display: none;
   width: 100%;
-  min-height: 100%;
+}
+@media screen and (min-width: 481px) {
+  video {
+    display: block;
+  }
 }
 h3 {
   margin-top: 0;
@@ -98,6 +103,21 @@ a:hover {
   color: #ff0000;
 }
 
+section.list-destinations {
+  margin: 1em 0;
+  padding: 0.5em;
+  flex-basis: 18em;
+  flex-grow: 1;
+  flex-shrink: 0;
+  background-color: lightgray;
+}
+
+@media only screen and (min-width: 1280px) {
+  section.list-destinations {
+    display: none;
+  }
+}
+
 section.articlesAside {
   margin: 1em 0;
   display: flex;
@@ -105,7 +125,7 @@ section.articlesAside {
   flex-direction: column-reverse;
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1280px) {
   section.articlesAside {
     display: flex;
     flex-direction: row;
@@ -119,7 +139,6 @@ section.articles {
 }
 section.articles article {
   width: 100%;
-  height: 20em;
   overflow: hidden;
   margin: 1em 0;
 }
@@ -127,10 +146,14 @@ section.articles article section.content {
   display: flex;
   flex-direction: column-reverse;
 }
+section.articles article section.content h4 {
+  display: none;
+}
 
 figure.article {
   overflow: hidden;
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media only screen and (min-width: 481px) {
@@ -176,11 +199,13 @@ aside {
   flex-grow: 1;
   flex-shrink: 0;
   background-color: lightgray;
+  display: none;
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1280px) {
   aside {
     margin: 0 0 0 1em;
+    display: block;
   }
 }
 
@@ -223,12 +248,15 @@ article.article-6 {
   display: none;
 }
 aside.aside-1 {
+  display: block;
   grid-area: asideOne;
 }
 aside.aside-2 {
+  display: block;
   grid-area: asideTwo;
 }
 aside.aside-3 {
+  display: block;
   grid-area: asideThree;
 }
 @media only screen and (min-width: 481px) {
@@ -236,13 +264,13 @@ aside.aside-3 {
     display: block;
   }
 }
-@media only screen and (min-width: 481px) and (max-width: 1281px) {
+@media only screen and (min-width: 481px) and (max-width: 1279px) {
   aside.aside-3 {
     display: none;
   }
 }
 
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1280px) {
   article.article-4 {
     display: block;
   }
@@ -283,11 +311,11 @@ section.article-grid {
       "three three three three three five five five five five"
       "six six six six six six six six six six"
       "six six six six six six six six six six"
-      "asideOne asideOne asideOne asideOne asideOne asideOne asideOne asideOne asideOne asideOne"
-      "asideTwo asideTwo asideTwo asideTwo asideTwo asideTwo asideTwo asideTwo asideTwo asideTwo";
+      "asideOne asideOne asideOne asideOne asideOne asideTwo asideTwo asideTwo asideTwo asideTwo"
+      "asideOne asideOne asideOne asideOne asideOne asideTwo asideTwo asideTwo asideTwo asideTwo";
   }
 }
-@media only screen and (min-width: 1281px) {
+@media only screen and (min-width: 1280px) {
   section.article-grid {
     grid-template-areas:
       "two two two two two one one one one three three three"
@@ -325,7 +353,7 @@ section.contact-info {
 
 section.contact {
   float: left;
-  width: 70%;
+  width: 100%;
   background-color: #88da9f;
   padding: 1em;
 }
@@ -343,21 +371,25 @@ section.contact > form fieldset {
   background-color: white;
 }
 aside.aside-products {
+  display: block;
   margin: 0;
-  float: right;
-  width: 30%;
+  float: none;
+  width: 100%;
 }
-@media only screen and (max-width: 481px) {
-  aside.aside-products,
+@media only screen and (min-width: 481px) {
+  aside.aside-products {
+    float: right;
+    width: 30%;
+  }
   section.contact {
-    float: none;
-    width: 100%;
+    float: left;
+    width: 70%;
   }
 }
 
 article.tickets-article {
   margin: 1em 0;
-  display: hidden;
+  display: none;
 }
 
 @media screen and (min-width: 481px) {
@@ -375,8 +407,9 @@ section.tickets {
   width: 70%;
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 1279px) {
   section.tickets {
+    margin: 1em 0;
     float: none;
     width: 100%;
   }
@@ -405,6 +438,38 @@ section.tickets > table tr:nth-child(even) {
 
 section.tickets > table tr:nth-child(odd) {
   background-color: #fff;
+}
+
+aside.aside-products-tickets {
+  display: block;
+  margin: 0;
+  float: none;
+  width: 100%;
+}
+
+aside.aside-products-tickets .product-1 {
+  display: block;
+}
+aside.aside-products-tickets .product-2 {
+  display: block;
+}
+aside.aside-products-tickets .product-3 {
+  display: block;
+}
+
+@media only screen and (min-width: 1280px) {
+  aside.aside-products-tickets {
+    float: right;
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 1279px) {
+  aside.aside-products-tickets {
+    display: flex;
+  }
+  aside.aside-products-tickets .product-1 {
+    display: none;
+  }
 }
 
 .nav-mobile {
@@ -496,7 +561,7 @@ section.tickets > table tr:nth-child(odd) {
 }
 
 /*
- * But let's hide the middle one.
+ * But let's hide the middle one
  */
 #toggle-mobile-nav input:checked ~ span:nth-last-child(3) {
   opacity: 0;
@@ -542,4 +607,8 @@ section.tickets > table tr:nth-child(odd) {
  */
 #toggle-mobile-nav input:checked ~ ul {
   transform: none;
+}
+
+.none {
+  display: none;
 }

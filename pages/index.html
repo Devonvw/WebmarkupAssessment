@@ -1,16 +1,23 @@
-<!DOCTYPE html5>
-<html>
+<!DOCTYPE html>
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="A site about me, Devon. It describes who i am and what i do"
+      content="TUI Group (Touristik Union International) is een multinationale groep die vooral actief is in de toerismesector. De hoofdzetel is gevestigd in Hannover, Nedersaksen, Duitsland.
+
+      De aandelen van de TUI Group staan genoteerd aan de Frankfurter Wertpapierbörse en de London Stock Exchange. Het maakt onderdeel uit van de FTSE 100 aandelenindex. De grootste aandeelhouder is de Rus Aleksej Mordasjov, die middels Unifirm Limited, bijna een kwart van de aandelen in handen heeft.[1] Het bedrijf heeft een gebroken boekjaar dat loopt tot 30 september."
     />
-    <meta name="keywords" content="Devon, Gym, Relaxed" />
+    <meta
+      name="keywords"
+      content="Tui, vliegen, vakantie, ticket, bestemming"
+    />
     <meta name="author" content="Devon van Wichen" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Devon</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   </head>
   <body>
     <header>
@@ -24,7 +31,6 @@
       <h2>Discover your smile</h2>
       <nav class="nav">
         <ul>
-          <li><a href="index.html"> Best Destinations</a></li>
           <li><a href="bestdestinations.html"> Best Destinations</a></li>
           <li><a href="tickets.html"> Tickets</a></li>
           <li><a href="contact.html"> Contact</a></li>
@@ -32,35 +38,66 @@
       </nav>
       <nav class="nav-mobile">
         <section id="toggle-mobile-nav">
+          <h6 class="none">Menu</h6>
           <input type="checkbox" />
 
           <span></span>
           <span></span>
           <span></span>
-
-          <!--
-          Too bad the menu has to be inside of the button
-          but hey, it's pure CSS magic.
-          -->
           <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Best Destinations</li></a>
-            <a href="#"><li>Tickets</li></a>
-            <a href="#"><li>Contact</li></a>
+            <li><a href="bestdestinations.html">Best Destinations</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </section>
       </nav>
     </header>
+    <section class="list-destinations">
+      <h3>Upcoming routes</h3>
+      <ol>
+        <li>
+          <h4>Ninh Binh, Vietnam</h4>
+          <p>
+            Tijdens een boottocht in dit pittoreske natuurgebied waan je je in
+            een film.
+          </p>
+        </li>
+        <li>
+          <h4>Seogwipo, Zuid-Korea</h4>
+          <p>
+            Laad jezelf na een avontuurlijke dag op bij de Seogwipo Olle Market.
+          </p>
+        </li>
+        <li>
+          <h4>Žabljak, Montenegro</h4>
+          <p>De grootste betonnen boogbrug voor voertuigen in Europa.</p>
+        </li>
+        <li>
+          <h4>Jerevan, Armenië</h4>
+          <p>Voor geschiedenisliefhebbers is Jerevan een absolute must.</p>
+        </li>
+        <li>
+          <h4>Salta, Argentinië</h4>
+          <p>
+            Een reis naar deze prachtige plek zal een kleurrijke impressie bij
+            je achterlaten.
+          </p>
+        </li>
+      </ol>
+    </section>
     <video autoplay>
       <source src="../assets/video/indexVideo.mp4" type="video/mp4" />
       <source src="../assets/video/indexVideo.ogg" type="video/ogg" />
     </video>
 
     <section class="articlesAside">
+      <h2 class="none">Bestemmingen</h2>
       <section class="articles">
+        <h2 class="none">3 verschillende bestemmingen</h2>
         <article>
           <header><h3>Amsterdam</h3></header>
           <section class="content">
+            <h4>Nederland</h4>
             <figure class="article">
               <a
                 href="https://www.tui.nl/reizen/nederland/noord-holland/amsterdam/?clearmodel=1"
@@ -72,18 +109,19 @@
                 />
               </a>
               <figcaption>
-                Photo by
+                Foto door
                 <a
                   href="https://unsplash.com/@stewi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                   >Stefan Widua</a
                 >
-                on
+                op
                 <a
                   href="https://unsplash.com/s/photos/berlin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
                   >Unsplash</a
                 >
               </figcaption>
             </figure>
+
             <p>
               Met een vliegticket Amsterdam hoef je je niet te vervelen. Vermaak
               je overdag met shoppen, musea en door de stad slenteren, en kies
@@ -94,6 +132,10 @@
               herenhuizen eens vanuit een rondvaart door de grachten, ontmoet
               beroemdheden in Madame Tussauds en verken de luxe winkels op de PC
               Hooftstraat.
+              <a
+                href="https://www.tui.nl/reizen/nederland/noord-holland/amsterdam/?clearmodel=1"
+                >Meer info</a
+              >.
             </p>
           </section>
           <footer>
@@ -105,40 +147,47 @@
         </article>
         <article>
           <header><h3>Londen</h3></header>
-          <figure class="article">
-            <a
-              href="https://www.tui.nl/informatie/verenigd-koninkrijk/engeland/londen/"
-            >
-              <img
-                src="../assets/images/london.jpg"
-                alt="Foto van Londen"
-                title="Londen"
-              />
-            </a>
-            <figcaption>
-              Photo by
+          <section class="content">
+            <h4>Engeland</h4>
+            <figure class="article">
               <a
-                href="https://unsplash.com/@stewi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                >Stefan Widua</a
+                href="https://www.tui.nl/informatie/verenigd-koninkrijk/engeland/londen/"
               >
-              on
+                <img
+                  src="../assets/images/london.jpg"
+                  alt="Foto van Londen"
+                  title="Londen"
+                />
+              </a>
+              <figcaption>
+                Foto door
+                <a
+                  href="https://unsplash.com/@stewi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Stefan Widua</a
+                >
+                op
+                <a
+                  href="https://unsplash.com/s/photos/berlin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Unsplash</a
+                >
+              </figcaption>
+            </figure>
+            <p>
+              Van het wisselen van de wacht naar een levendige bar in Covent
+              Garden. Dat is typisch Londen; een mix van hippe trends en
+              eeuwenoude tradities. Maak een stadswandeling langs eyecatchers
+              zoals de Big Ben, de London Bridge en Buckingham Palace. Dat alles
+              en nog veel meer kun je ook van bovenaf bekijken vanuit het 135
+              meter hoge reuzenrad de London Eye. Eenmaal met beide benen weer
+              op de grond is een bezoek aan Covent Garden zeer de moeite waard.
+              Het is er gezellig, levendig en dé plek voor talentvolle én soms
+              ook beroemde straatartiesten.
               <a
-                href="https://unsplash.com/s/photos/berlin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                >Unsplash</a
-              >
-            </figcaption>
-          </figure>
-          <p>
-            Van het wisselen van de wacht naar een levendige bar in Covent
-            Garden. Dat is typisch Londen; een mix van hippe trends en
-            eeuwenoude tradities. Maak een stadswandeling langs eyecatchers
-            zoals de Big Ben, de London Bridge en Buckingham Palace. Dat alles
-            en nog veel meer kun je ook van bovenaf bekijken vanuit het 135
-            meter hoge reuzenrad de London Eye. Eenmaal met beide benen weer op
-            de grond is een bezoek aan Covent Garden zeer de moeite waard. Het
-            is er gezellig, levendig en dé plek voor talentvolle én soms ook
-            beroemde straatartiesten.
-          </p>
+                href="https://www.tui.nl/informatie/verenigd-koninkrijk/engeland/londen/"
+                >Meer info</a
+              >.
+            </p>
+          </section>
           <footer>
             <small
               >"By seeing London, I have seen as much of life as the world can
@@ -148,43 +197,51 @@
         </article>
         <article>
           <header><h3>Berlijn</h3></header>
-          <figure class="article">
-            <a href="https://www.tui.nl/reizen/duitsland/berlijn/?clearmodel=1">
-              <img
-                src="../assets/images/berlin.jpg"
-                alt="Foto van Berlijn"
-                title="Berlijn"
-              />
-            </a>
-            <figcaption>
-              Photo by
+          <section class="content">
+            <h4>Duitsland</h4>
+            <figure class="article">
               <a
-                href="https://unsplash.com/@stewi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                >Stefan Widua</a
+                href="https://www.tui.nl/reizen/duitsland/berlijn/?clearmodel=1"
               >
-              on
+                <img
+                  src="../assets/images/berlin.jpg"
+                  alt="Foto van Berlijn"
+                  title="Berlijn"
+                />
+              </a>
+              <figcaption>
+                Foto door
+                <a
+                  href="https://unsplash.com/@stewi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Stefan Widua</a
+                >
+                op
+                <a
+                  href="https://unsplash.com/s/photos/berlin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Unsplash</a
+                >
+              </figcaption>
+            </figure>
+
+            <p>
+              Berlijn, de hoofdstad van Duitsland en van de stadsstaat een
+              deelstaat van dat land. Sinds de val van de muur in 1989 heeft de
+              hoofdstad van het herenigde Duitsland een ware metamorfose
+              ondergaan door gedurfde nieuwbouw en bijzondere renovaties. Denk
+              alleen al aan de compleet verbouwde Potsdamer Platz en de
+              gloednieuwe Hauptbahnhof. Maar Berlijn houdt ook verleden in ere
+              en de Reichstag, Brandenburger Tor en het museum bij Checkpoint
+              Charlie zijn een must-see tijdens uw verblijf in Berlijn. Geniet
+              van de brede wegen, de rivieren en de parken van de herrezen stad.
+              Winkelen kan in het bekende KaDeWe en de Kurfürstendamm in het
+              district Charlottenburg, maar vergeet ook zeker de
+              Friedrichstrasse in Mitte niet.
               <a
-                href="https://unsplash.com/s/photos/berlin?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-                >Unsplash</a
-              >
-            </figcaption>
-          </figure>
-
-          <p>
-            Berlijn, de hoofdstad van Duitsland en van de stadsstaat een
-            deelstaat van dat land. Sinds de val van de muur in 1989 heeft de
-            hoofdstad van het herenigde Duitsland een ware metamorfose ondergaan
-            door gedurfde nieuwbouw en bijzondere renovaties. Denk alleen al aan
-            de compleet verbouwde Potsdamer Platz en de gloednieuwe
-            Hauptbahnhof. Maar Berlijn houdt ook verleden in ere en de
-            Reichstag, Brandenburger Tor en het museum bij Checkpoint Charlie
-            zijn een must-see tijdens uw verblijf in Berlijn. Geniet van de
-            brede wegen, de rivieren en de parken van de herrezen stad. Winkelen
-            kan in het bekende KaDeWe en de Kurfürstendamm in het district
-            Charlottenburg, maar vergeet ook zeker de Friedrichstrasse in Mitte
-            niet.
-          </p>
-
+                href="https://www.tui.nl/reizen/duitsland/berlijn/?clearmodel=1"
+                >Meer info</a
+              >.
+            </p>
+          </section>
           <footer>
             <small
               >"Berlin, the greatest cultural extravaganza that one could
@@ -228,7 +285,10 @@
         </ol>
       </aside>
     </section>
-    <section class="cookie"><p>Cookie statement</p></section>
+    <section class="cookie">
+      <h4 class="none">Cookies</h4>
+      <p>Cookie statement</p>
+    </section>
     <footer class="student"><span>&copy; 2021 Devon van Wichen</span></footer>
   </body>
 </html>

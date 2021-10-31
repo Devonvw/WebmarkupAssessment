@@ -31,29 +31,23 @@
       <h2>Discover your smile</h2>
       <nav class="nav">
         <ul>
-          <li><a href="index.html"> Best Destinations</a></li>
-          <li><a href="bestdestinations.html"> Best Destinations</a></li>
-          <li><a href="tickets.html"> Tickets</a></li>
-          <li><a href="contact.html"> Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bestdestinations.html">Best Destinations</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <nav class="nav-mobile">
         <section id="toggle-mobile-nav">
+          <h6 class="none">Menu</h6>
           <input type="checkbox" />
 
           <span></span>
           <span></span>
           <span></span>
-
-          <!--
-          Too bad the menu has to be inside of the button
-          but hey, it's pure CSS magic.
-          -->
           <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Best Destinations</li></a>
-            <a href="#"><li>Tickets</li></a>
-            <a href="#"><li>Contact</li></a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bestdestinations.html">Best Destinations</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </section>
       </nav>
@@ -67,7 +61,7 @@
       </p>
     </article>
     <section class="tickets">
-      <h1>Prijs tabel</h1>
+      <h3>Prijs tabel</h3>
       <table>
         <thead>
           <tr>
@@ -223,8 +217,8 @@
       </table>
       <footer><small>Source of data &copy; 2021 TUI.nl</small></footer>
     </section>
-    <aside class="aside-products">
-      <figure>
+    <aside class="aside-products-tickets">
+      <figure class="product-1">
         <a href="https://www.tui.nl/reizen/vietnam/?clearmodel=1">
           <img
             src="../assets/images/ninhBinh.jpg"
@@ -248,7 +242,7 @@
         </figcaption>
       </figure>
 
-      <figure>
+      <figure class="product-2">
         <a href="https://www.tui.nl/reizen/thailand/bangkok/?clearmodel=1">
           <img
             src="../assets/images/seogwipo.jpg"
@@ -272,7 +266,7 @@
         </figcaption>
       </figure>
 
-      <figure>
+      <figure class="product-3">
         <a href="https://www.tui.nl/reizen/montenegro/?clearmodel=1">
           <img
             src="../assets/images/zabljak.jpg"
@@ -297,7 +291,10 @@
       </figure>
     </aside>
 
-    <section class="cookie"><p>Cookie statement</p></section>
+    <section class="cookie">
+      <h4 class="none">Cookies</h4>
+      <p>Cookie statement</p>
+    </section>
     <footer class="student"><span>&copy; 2021 Devon van Wichen</span></footer>
   </body>
 </html>

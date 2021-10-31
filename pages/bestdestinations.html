@@ -1,16 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta
       name="description"
-      content="A site about me, Devon. It describes who i am and what i do"
+      content="TUI Group (Touristik Union International) is een multinationale groep die vooral actief is in de toerismesector. De hoofdzetel is gevestigd in Hannover, Nedersaksen, Duitsland.
+
+      De aandelen van de TUI Group staan genoteerd aan de Frankfurter Wertpapierbörse en de London Stock Exchange. Het maakt onderdeel uit van de FTSE 100 aandelenindex. De grootste aandeelhouder is de Rus Aleksej Mordasjov, die middels Unifirm Limited, bijna een kwart van de aandelen in handen heeft.[1] Het bedrijf heeft een gebroken boekjaar dat loopt tot 30 september."
     />
-    <meta name="keywords" content="Devon, Gym, Relaxed" />
+    <meta
+      name="keywords"
+      content="Tui, vliegen, vakantie, ticket, bestemming"
+    />
     <meta name="author" content="Devon van Wichen" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Devon</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   </head>
   <body>
     <header>
@@ -24,35 +31,30 @@
       <h2>Discover your smile</h2>
       <nav class="nav">
         <ul>
-          <li><a href="index.html"> Best Destinations</a></li>
-          <li><a href="bestdestinations.html"> Best Destinations</a></li>
-          <li><a href="tickets.html"> Tickets</a></li>
-          <li><a href="contact.html"> Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tickets.html">Tickets</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <nav class="nav-mobile">
         <section id="toggle-mobile-nav">
+          <h6 class="none">Menu</h6>
           <input type="checkbox" />
 
           <span></span>
           <span></span>
           <span></span>
-
-          <!--
-          Too bad the menu has to be inside of the button
-          but hey, it's pure CSS magic.
-          -->
           <ul id="menu">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Best Destinations</li></a>
-            <a href="#"><li>Tickets</li></a>
-            <a href="#"><li>Contact</li></a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </section>
       </nav>
     </header>
 
     <section class="article-grid">
+      <h2 class="none">Beste bestemmingen</h2>
       <article class="article-1">
         <h3>Ninh Binh, Vietnam</h3>
         <p>
@@ -214,7 +216,10 @@
         </figure>
       </aside>
     </section>
-    <section class="cookie"><p>Cookie statement</p></section>
+    <section class="cookie">
+      <h4 class="none">Cookies</h4>
+      <p>Cookie statement</p>
+    </section>
     <footer class="student"><span>&copy; 2021 Devon van Wichen</span></footer>
   </body>
 </html>
